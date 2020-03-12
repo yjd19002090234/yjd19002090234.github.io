@@ -1,0 +1,19 @@
+<html>
+
+<body>
+    <script>
+        function reduce(array, combine, start) {
+            let current = start;
+            for (let element of array) {
+                current = combine(current, element);
+            } 
+            return current;
+        } 
+        console.log(reduce([5, 2, 3, 4], 
+        // (a, b) => a + b
+        function(a,b){return a+b;}
+        , 0));
+    </script>
+</body>
+
+</html>
