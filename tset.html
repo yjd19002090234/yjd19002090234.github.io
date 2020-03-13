@@ -9,9 +9,16 @@
             } 
             return current;
         } 
-        console.log(reduce([5, 2, 3, 4], 
+        var data=[
+            {name:'语文',credit:5}
+            ,  {name:'数学',credit:2}
+            ,  {name:'英语',credit:3}
+            ,  {name:'科学',credit:4}
+            
+        ]
+        console.log(reduce(date, 
         // (a, b) => a + b
-        function(a,b){return a+b;}
+        function(a,b){return a+b.credit;}
         , 0));
     </script>
 </body>
