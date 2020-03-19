@@ -1,26 +1,26 @@
 <html>
+    <body>
+        <script src="./underscore.js"></script>
+        <script src="./stay.js"></script>
+        <script>
 
-<body>
-    <script>
-        function reduce(array, combine, start) {
-            let current = start;
-            for (let element of array) {
-                current = combine(current, element);
-            } 
-            return current;
-        } 
-        var data=[
-            {name:'语文',credit:5}
-            ,  {name:'数学',credit:2}
-            ,  {name:'英语',credit:3}
-            ,  {name:'科学',credit:4}
-            
-        ]
-        console.log(reduce(date, 
-        // (a, b) => a + b
-        function(a,b){return a+b.credit;}
-        , 0));
-    </script>
-</body>
 
+
+
+var reduce='hahu';
+var data=[
+    {name:'计算机安装与维护',credit:2,number:"C0000567"}
+    ,{name:'静态网页制作',credit:2,studentCount:44}
+    ,{name:'计算机编程基础',credit:4}
+    ,{name:'大学英语',credit:2}
+    ,{name:'软件技术导论',credit:2}
+];
+date.stat={max:_.max(data,function(it){return it.credit;})}
+console.log(data.start);
+
+
+
+        </script>
+
+    </body>
 </html>
