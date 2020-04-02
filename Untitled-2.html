@@ -1,0 +1,22 @@
+
+<html >
+
+
+<body>
+    <script>
+var value=11;
+var initvalue=22;
+function addition(){
+    var value=initvalue;
+    return function add(x){
+        value=value+x;
+        sc=value;
+    };
+}
+var func=addition();
+func(33);
+func(44);
+console.log(sc);
+    </script>  
+</body>
+</html>
